@@ -1,0 +1,126 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color scheme for Al-Sharqawi restaurant with red, yellow, white, black theme */
+  --background: #fef2f2; /* Light red background */
+  --foreground: #000000; /* Black text */
+  --card: #ffffff; /* White cards */
+  --card-foreground: #000000; /* Black text on cards */
+  --popover: #ffffff; /* White popovers */
+  --popover-foreground: #000000; /* Black text in popovers */
+  --primary: #dc2626; /* Red primary */
+  --primary-foreground: #ffffff; /* White text on primary */
+  --secondary: #f59e0b; /* Yellow secondary */
+  --secondary-foreground: #000000; /* Black text on secondary */
+  --muted: #374151; /* Dark gray muted */
+  --muted-foreground: #ffffff; /* White text on muted */
+  --accent: #f59e0b; /* Yellow accent */
+  --accent-foreground: #000000; /* Black text on accent */
+  --destructive: #dc2626; /* Red destructive */
+  --destructive-foreground: #ffffff; /* White text on destructive */
+  --border: #000000; /* Black borders */
+  --input: #ffffff; /* White inputs */
+  --ring: #f59e0b; /* Yellow focus rings */
+  --chart-1: #dc2626; /* Red chart color */
+  --chart-2: #f59e0b; /* Yellow chart color */
+  --chart-3: #374151; /* Dark gray chart color */
+  --chart-4: #000000; /* Black chart color */
+  --chart-5: #fef2f2; /* Light red chart color */
+  --radius: 0.5rem; /* Rounded corners */
+  --sidebar: #fef2f2; /* Light red sidebar */
+  --sidebar-foreground: #000000; /* Black sidebar text */
+  --sidebar-primary: #dc2626; /* Red sidebar primary */
+  --sidebar-primary-foreground: #ffffff; /* White text on sidebar primary */
+  --sidebar-accent: #f59e0b; /* Yellow sidebar accent */
+  --sidebar-accent-foreground: #000000; /* Black text on sidebar accent */
+  --sidebar-border: #000000; /* Black sidebar borders */
+  --sidebar-ring: #f59e0b; /* Yellow sidebar focus rings */
+}
+
+.dark {
+  --background: #1f2937; /* Dark background */
+  --foreground: #ffffff; /* White text */
+  --card: #374151; /* Dark cards */
+  --card-foreground: #ffffff; /* White text on cards */
+  --popover: #374151; /* Dark popovers */
+  --popover-foreground: #ffffff; /* White text in popovers */
+  --primary: #dc2626; /* Red primary */
+  --primary-foreground: #ffffff; /* White text on primary */
+  --secondary: #f59e0b; /* Yellow secondary */
+  --secondary-foreground: #000000; /* Black text on secondary */
+  --muted: #4b5563; /* Gray muted */
+  --muted-foreground: #d1d5db; /* Light gray text on muted */
+  --accent: #f59e0b; /* Yellow accent */
+  --accent-foreground: #000000; /* Black text on accent */
+  --destructive: #dc2626; /* Red destructive */
+  --destructive-foreground: #ffffff; /* White text on destructive */
+  --border: #4b5563; /* Gray borders */
+  --input: #374151; /* Dark inputs */
+  --ring: #f59e0b; /* Yellow focus rings */
+  --chart-1: #dc2626; /* Red chart color */
+  --chart-2: #f59e0b; /* Yellow chart color */
+  --chart-3: #9ca3af; /* Light gray chart color */
+  --chart-4: #ffffff; /* White chart color */
+  --chart-5: #1f2937; /* Dark chart color */
+  --sidebar: #1f2937; /* Dark sidebar */
+  --sidebar-foreground: #ffffff; /* White sidebar text */
+  --sidebar-primary: #dc2626; /* Red sidebar primary */
+  --sidebar-primary-foreground: #ffffff; /* White text on sidebar primary */
+  --sidebar-accent: #f59e0b; /* Yellow sidebar accent */
+  --sidebar-accent-foreground: #000000; /* Black text on sidebar accent */
+  --sidebar-border: #4b5563; /* Gray sidebar borders */
+  --sidebar-ring: #f59e0b; /* Yellow sidebar focus rings */
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
