@@ -57,11 +57,11 @@ export default function MenuPage() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-balance">مطعم الشرقاوي</h1>
           <p className="text-xl md:text-2xl opacity-90">أشهى الأكلات الشعبية المصرية</p>
-          <div className="mt-4 flex justify-center">
+          {/* <div className="mt-4 flex justify-center">
             <Badge variant="secondary" className="text-lg px-4 py-2">
               منذ عام 1985
-            </Badge>
-          </div>
+            </Badge> 
+          </div> */}
         </div>
       </header>
 
@@ -189,11 +189,12 @@ export default function MenuPage() {
           <Card className="bg-primary text-primary-foreground max-w-2xl mx-auto">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold mb-4">مطعم الشرقاوي</h3>
-              <p className="text-lg mb-4">نقدم لكم أشهى الأكلات الشعبية المصرية بأجود الخامات وأفضل الأسعار</p>
+              <p className="text-lg mb-4">نقدم لكم أشهى الأكلات الشعبية المصرية</p>
               <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-sm opacity-90">
-                <span>📍 شارع الجمهورية، وسط البلد</span>
-                <span>📞 01234567890</span>
-                <span>🕐 مفتوح يومياً من 10 ص إلى 2 ص</span>
+                <span>📍 شارع جسر السويس - بجوار هايبر الجزاوي - امام جامع السلام - المنيب</span>
+                <span>📞 01069044928</span>
+                <span>📞 01287150157</span>
+                <span>🕐 مفتوح يومياً من 10 ص إلى 4 ص</span>
               </div>
             </CardContent>
           </Card>
